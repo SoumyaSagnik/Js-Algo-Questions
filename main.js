@@ -1,5 +1,4 @@
 // ! Remove duplicates from an array
-
 function removeDuplicates(arr) {
   const b = [...new Set(arr)];
   console.log(b);
