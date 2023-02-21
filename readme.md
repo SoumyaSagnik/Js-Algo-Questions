@@ -7,3 +7,5 @@
 ### Median of two sorted arrays.
 
 ### Minimum element of an array.
+
+### Palindrome check of a string.
