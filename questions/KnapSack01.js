@@ -46,7 +46,7 @@ function memoizedKnapsack01(w, v, W) {
 
   function knapsack(w, v, W, index) {
     if (W === 0 || index === -1) return 0;
-    if (dpMatrix[index + 1][W] !== -1) return dpMatrix[index][W];
+    if (dpMatrix[index + 1][W] !== -1) return dpMatrix[index + 1][W];
     if (w[index] <= W)
       return (dpMatrix[index + 1][W] = Math.max(
         v[index] + knapsack(w, v, W - w[index], index - 1),
