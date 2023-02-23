@@ -32,3 +32,4 @@ function recursiveFibonacci(terms) {
 }
 
 console.log("recursive", recursiveFibonacci(10));
+console.log("-------------------------------");
