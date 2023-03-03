@@ -15,3 +15,5 @@
 ### Fibonacci series
 
 ### 01 Knapsack
+
+### Consecutive sum index.
