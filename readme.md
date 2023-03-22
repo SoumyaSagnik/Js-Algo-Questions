@@ -17,3 +17,5 @@
 ### 01 Knapsack
 
 ### Consecutive sum index.
+
+### Numbers smaller than the current number.
