@@ -19,3 +19,5 @@
 ### Consecutive sum index.
 
 ### Numbers smaller than the current number.
+
+### Index of first char of substring in a string if present.
