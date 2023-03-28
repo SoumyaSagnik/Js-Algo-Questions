@@ -21,3 +21,5 @@
 ### Numbers smaller than the current number.
 
 ### Index of first char of substring in a string if present.
+
+### Max profit obtained from buying and selling stock in different day.
