@@ -29,3 +29,5 @@
 ### Picking gifts.
 
 ### Intersection of two arrays including duplicates.
+
+### Common characters in array of strings.
