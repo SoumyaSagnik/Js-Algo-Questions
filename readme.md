@@ -33,3 +33,5 @@
 ### Common characters in array of strings.
 
 ### Reverse vowels of a string.
+
+### First unique character in a string
