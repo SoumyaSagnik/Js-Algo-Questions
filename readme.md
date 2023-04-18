@@ -37,3 +37,5 @@
 ### First unique character in a string
 
 ### GCD of max and min array element
+
+### Staircase Sum Problem
