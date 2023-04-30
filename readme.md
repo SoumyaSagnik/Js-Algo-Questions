@@ -1,6 +1,6 @@
 ## [Second Largest Element in Array](#secondLargestElementInArray)
 
-1. <a id="secondLargestElementInArray"></a> Second largest element in array.
+### <a id="secondLargestElementInArray"></a> Second largest element in array.
 
 **Brute Force** (nlogn)
 
