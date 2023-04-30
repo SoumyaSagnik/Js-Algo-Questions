@@ -1,41 +1,39 @@
-# Algorithm questions solved in JavaScript
+## [Second Largest Element in Array](#secondLargestElementInArray)
 
-## List
+### <a id="secondLargestElementInArray"></a> Second largest element in array.
 
-### Remove duplicates from array.
+**Brute Force** (nlogn)
 
-### Median of two sorted arrays.
+```javascript
+const arr = [23, 35, 1, 10, 34, 1, 35];
 
-### Minimum element of an array.
+function secondLargest(arr) {
+  return [...new Set(arr)].sort((a, b) => b - a)[1];
+}
 
-### Palindrome check of a string.
+console.log(secondLargest(arr)); // 34
+```
 
-### Letter Combinations of a phone.
+**Optimized Approach**
 
-### Fibonacci series
+```javascript
+const arr = [23, 35, 1, 10, 34, 1, 35];
 
-### 01 Knapsack
+function secondLargest(arr) {
+  let largest = -Infinity;
+  let secondLargest = -Infinity;
 
-### Consecutive sum index.
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      secondLargest = largest;
+      largest = arr[i];
+    } else if (arr[i] !== largest && arr[i] > secondLargest) {
+      secondLargest = arr[i];
+    }
+  }
 
-### Numbers smaller than the current number.
+  return secondLargest;
+}
 
-### Index of first char of substring in a string if present.
-
-### Max profit obtained from buying and selling stock in different day.
-
-### Intersection of two arrays.
-
-### Picking gifts.
-
-### Intersection of two arrays including duplicates.
-
-### Common characters in array of strings.
-
-### Reverse vowels of a string.
-
-### First unique character in a string
-
-### GCD of max and min array element
-
-### Staircase Sum Problem
+console.log(secondLargest(arr)); // 34
+```
