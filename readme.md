@@ -8,7 +8,7 @@
 
 # Answers
 
-### <a id="secondLargestElementInArray"></a> Second largest element in array.
+### <a id="secondLargestElementInArray">Second largest element in array.</a>
 
 **Brute Force** `O(nlogn)`
 
@@ -48,7 +48,7 @@ console.log(secondLargest(arr)); // 34
 
 ---
 
-### <a id="rotateArrayKTimes"></a> Rotate array k times
+### <a id="rotateArrayKTimes">Rotate array k times.</a>
 
 **Eg: arr = [1,2,3,4,5,6,7], k = 10**
 
