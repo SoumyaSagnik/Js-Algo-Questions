@@ -2,7 +2,7 @@
 
 ### <a id="secondLargestElementInArray"></a> Second largest element in array.
 
-**Brute Force** (nlogn)
+**Brute Force** O(nlogn)
 
 ```javascript
 const arr = [23, 35, 1, 10, 34, 1, 35];
@@ -14,7 +14,7 @@ function secondLargest(arr) {
 console.log(secondLargest(arr)); // 34
 ```
 
-**Optimized Approach**
+**Optimized Approach** O(n)
 
 ```javascript
 const arr = [23, 35, 1, 10, 34, 1, 35];
