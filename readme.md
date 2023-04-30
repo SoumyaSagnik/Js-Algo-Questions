@@ -1,6 +1,6 @@
 ## [Second Largest Element in Array](#secondLargestElementInArray)
 
-### <a id="secondLargestElementInArray"></a> Second largest element in array.
+1. <a id="secondLargestElementInArray"></a> Second largest element in array.
 
 **Brute Force** (nlogn)
 
@@ -37,3 +37,5 @@ function secondLargest(arr) {
 
 console.log(secondLargest(arr)); // 34
 ```
+
+---
