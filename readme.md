@@ -4,6 +4,8 @@
 
 ## [Rotate an array k times](#rotateArrayKTimes)
 
+## [Missing binary from array of binary strings](#missingBinary)
+
 ---
 
 # Answers
@@ -75,6 +77,27 @@ function rotateArray(arr, k) {
 }
 
 console.log(rotateArray(arr, k)); // [5,6,7,1,2,3,4]
+```
+
+---
+
+### <a id="missingBinary"> Missing binary from array of binary strings.</a>
+
+_Array consists of binary from 0 to N_
+<br>
+**Eg: ["0", "01", "10", "11", "101"] &nbsp;&nbsp;&nbsp;&nbsp; Output: "100"**
+
+```javascript
+const arr = ["0", "01", "10", "11", "101"];
+
+function missingNumberInBinary(nums) {
+  nums = nums.map((num) => parseInt(num, 2));
+  const arraySum = nums.reduce((total, num) => total + num, 0);
+  const missingNumber = (nums.length * (nums.length + 1)) / 2 - arraySum;
+  return missingNumber.toString(2);
+}
+
+console.log(missingNumberInBinary(arr)); // "100"
 ```
 
 ---
