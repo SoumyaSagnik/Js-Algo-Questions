@@ -91,10 +91,10 @@ _Array consists of binary from 0 to N_
 const arr = ["0", "01", "10", "11", "101"];
 
 function missingNumberInBinary(nums) {
-  nums = nums.map((num) => parseInt(num, 2));
+  nums = nums.map((num) => parseInt(num, 2)); // binary to decimal
   const arraySum = nums.reduce((total, num) => total + num, 0);
   const missingNumber = (nums.length * (nums.length + 1)) / 2 - arraySum;
-  return missingNumber.toString(2);
+  return missingNumber.toString(2); // decimal to binary
 }
 
 console.log(missingNumberInBinary(arr)); // "100"
