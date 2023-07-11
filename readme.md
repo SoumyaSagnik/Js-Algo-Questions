@@ -6,6 +6,8 @@
 
 ## [Missing binary from array of binary strings](#missingBinary)
 
+## [Check if an array contains two elemets at different indexes whose sum equals to a given target](#targetSum)
+
 ---
 
 # Answers
@@ -98,6 +100,55 @@ function missingNumberInBinary(nums) {
 }
 
 console.log(missingNumberInBinary(arr)); // "100"
+```
+
+---
+
+### <a id="targetSum"> Check if an array has a pair whose sum equals to a given target sum.</a>
+
+**When array is sorted**
+
+```javascript
+const arr = [1, 3, 8, 17, 20];
+
+function targetSum(arr, target) {
+  let low = 0;
+  let high = arr.length - 1;
+
+  while (low < high) {
+    if (arr[low] + arr[high] === target) return true;
+    else if (arr[low] + arr[high] < target) low++;
+    else high--;
+  }
+
+  return false;
+}
+
+console.log(targetSum(arr, 11)); // true
+console.log(targetSum(arr, 17)); // false
+```
+
+---
+
+**When array is not sorted**
+
+```javascript
+const arr = [4, 8, 1, 3, 9];
+
+function targetSum(arr, target) {
+  const complements = new Set();
+  for (let i = 0; i < arr.length; i++) {
+    if (complements.has(arr[i])) return true;
+    else {
+      complements.add(target - arr[i]);
+    }
+  }
+
+  return false;
+}
+
+console.log(targetSum(arr, 11)); // true
+console.log(targetSum(arr, 18)); // false
 ```
 
 ---
